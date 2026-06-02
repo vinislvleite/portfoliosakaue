@@ -1,0 +1,115 @@
+.containerGeral {
+  position: relative;
+
+  min-height: 100vh;
+  padding: 4rem 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #121214 50%, #2e1065 100%);
+  color: #f8fafc;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.backContainer {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.content {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.greeting {
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.buttonHome {
+  text-decoration: none;
+
+  background: transparent;
+  color: white;
+
+  border: 1px solid #3f3f46;
+
+  padding: 0.9rem 1.8rem;
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.buttonHome:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #71717a;
+  transform: translateY(-3px);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 16px;
+  padding: 1.8rem;
+
+  text-align: left;
+
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.card p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .backContainer {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
