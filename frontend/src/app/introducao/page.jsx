@@ -20,6 +20,10 @@ import {
   SiVite,
   SiSpring,
   SiMysql,
+  SiMongodb,
+  SiRedis,
+  SiApachecassandra,
+  SiNeo4J,
 } from "react-icons/si";
 
 function Page() {
@@ -132,7 +136,7 @@ function Page() {
               <li>Microsoft Power BI – Introdução à Análise de Dados</li>
               <li>Microsoft Power BI – Preparação de Dados para Análise</li>
               <li>
-                Excel Intermediário – análise, organização e tratamento de dados
+                Excel Intermediário – Análise, organização e tratamento de dados
               </li>
             </ul>
           </div>
@@ -232,15 +236,35 @@ function Page() {
             </div>
 
             <div className={styles.card}>
-              <h2>Banco de Dados</h2>
+            <h2>Banco de Dados</h2>
 
-              <ul className={styles.techList}>
-                <li>
-                  <SiMysql />
-                  <span>MySQL</span>
-                </li>
-              </ul>
-            </div>
+            <ul className={styles.techList}>
+              <li>
+                <SiMysql />
+                <span>MySQL</span>
+              </li>
+
+              <li>
+                <SiMongodb />
+                <span>MongoDB</span>
+              </li>
+
+              <li>
+                <SiRedis />
+                <span>Redis</span>
+              </li>
+
+              <li>
+                <SiApachecassandra />
+                <span>Apache Cassandra</span>
+              </li>
+
+              <li>
+                <SiNeo4J />
+                <span>Neo4j</span>
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
     </main>
