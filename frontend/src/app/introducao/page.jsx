@@ -11,6 +11,10 @@ import {
   FaJava,
   FaCss3Alt,
   FaFigma,
+  FaUsers,
+  FaLayerGroup,
+  FaLightbulb,
+  FaComments,
 } from "react-icons/fa";
 
 import {
@@ -265,6 +269,15 @@ function Page() {
               </li>
             </ul>
           </div>
+          <div className={styles.card}>
+          <h2>Soft Skills</h2>
+          <ul className={styles.techList}>
+            <li><FaUsers /><span>Trabalho em equipe</span></li>
+            <li><FaLayerGroup /><span>Organização</span></li>
+            <li><FaLightbulb /><span>Resolução de problemas</span></li>
+            <li><FaComments /><span>Comunicação</span></li>
+          </ul>
+        </div>
           </div>
         </div>
     </main>
