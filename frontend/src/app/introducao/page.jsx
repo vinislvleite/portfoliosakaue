@@ -15,6 +15,9 @@ import {
   FaLayerGroup,
   FaLightbulb,
   FaComments,
+  FaFileExcel,
+  FaChartBar,
+  FaGlobeAmericas,
 } from "react-icons/fa";
 
 import {
@@ -137,10 +140,21 @@ function Page() {
             <h2>Cursos</h2>
 
             <ul className={styles.list}>
-              <li>Microsoft Power BI – Introdução à Análise de Dados</li>
-              <li>Microsoft Power BI – Preparação de Dados para Análise</li>
               <li>
-                Excel Intermediário – Análise, organização e tratamento de dados
+                <FaChartBar/>
+                <span>Microsoft Power BI - Introdução à Análise de Dados</span>
+              </li>
+
+              <li>
+                <FaChartBar/>
+                <span>Microsoft Power BI - Preparação de Dados para Análise</span>
+              </li>
+
+              <li>
+                <FaFileExcel />
+                <span>
+                  Excel Intermediário - Análise, organização e tratamento de dados
+                </span>
               </li>
             </ul>
           </div>
@@ -149,97 +163,100 @@ function Page() {
             <h2>Idiomas</h2>
 
             <ul className={styles.list}>
-              <li>Inglês – Básico</li>
+              <li>
+                <FaGlobeAmericas />
+                Inglês - Intermédiario
+              </li>
             </ul>
           </div>
         </div>
 
         <h2 className={styles.sectionTitle}>Habilidades</h2>
 
-          <div className={styles.skillsGrid}>
-            <div className={styles.card}>
-              <h2>Linguagens de Programação</h2>
+        <div className={styles.skillsGrid}>
+          <div className={styles.card}>
+            <h2>Linguagens de Programação</h2>
 
-              <ul className={styles.techList}>
-                <li>
-                  <SiJavascript />
-                  <span>JavaScript</span>
-                </li>
+            <ul className={styles.techList}>
+              <li>
+                <SiJavascript />
+                <span>JavaScript</span>
+              </li>
 
-                <li>
-                  <SiTypescript />
-                  <span>TypeScript</span>
-                </li>
+              <li>
+                <SiTypescript />
+                <span>TypeScript</span>
+              </li>
 
-                <li>
-                  <FaPython />
-                  <span>Python</span>
-                </li>
+              <li>
+                <FaPython />
+                <span>Python</span>
+              </li>
 
-                <li>
-                  <FaJava />
-                  <span>Java</span>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <FaJava />
+                <span>Java</span>
+              </li>
+            </ul>
+          </div>
 
-            <div className={styles.card}>
-              <h2>Front-End</h2>
+          <div className={styles.card}>
+            <h2>Front-End</h2>
 
-              <ul className={styles.techList}>
-                <li>
-                  <FaReact />
-                  <span>React.js</span>
-                </li>
+            <ul className={styles.techList}>
+              <li>
+                <FaReact />
+                <span>React.js</span>
+              </li>
 
-                <li>
-                  <SiNextdotjs />
-                  <span>Next.js</span>
-                </li>
+              <li>
+                <SiNextdotjs />
+                <span>Next.js</span>
+              </li>
 
-                <li>
-                  <SiVite />
-                  <span>Vite.js</span>
-                </li>
+              <li>
+                <SiVite />
+                <span>Vite.js</span>
+              </li>
 
-                <li>
-                  <FaCss3Alt />
-                  <span>CSS Modules</span>
-                </li>
+              <li>
+                <FaCss3Alt />
+                <span>CSS Modules</span>
+              </li>
 
-                <li>
-                  <FaFigma />
-                  <span>Figma</span>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <FaFigma />
+                <span>Figma</span>
+              </li>
+            </ul>
+          </div>
 
-            <div className={styles.card}>
-              <h2>Back-End</h2>
+          <div className={styles.card}>
+            <h2>Back-End</h2>
 
-              <ul className={styles.techList}>
-                <li>
-                  <FaNodeJs />
-                  <span>Node.js</span>
-                </li>
+            <ul className={styles.techList}>
+              <li>
+                <FaNodeJs />
+                <span>Node.js</span>
+              </li>
 
-                <li>
-                  <DiCode />
-                  <span>APIs REST</span>
-                </li>
+              <li>
+                <DiCode />
+                <span>APIs REST</span>
+              </li>
 
-                <li>
-                  <SiSpring />
-                  <span>Spring Boot</span>
-                </li>
-                <li>
-                  <DiDocker />
-                  <span>Docker</span>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <SiSpring />
+                <span>Spring Boot</span>
+              </li>
+              <li>
+                <DiDocker />
+                <span>Docker</span>
+              </li>
+            </ul>
+          </div>
 
-            <div className={styles.card}>
+          <div className={styles.card}>
             <h2>Banco de Dados</h2>
 
             <ul className={styles.techList}>
@@ -269,17 +286,30 @@ function Page() {
               </li>
             </ul>
           </div>
+
           <div className={styles.card}>
-          <h2>Soft Skills</h2>
-          <ul className={styles.techList}>
-            <li><FaUsers /><span>Trabalho em equipe</span></li>
-            <li><FaLayerGroup /><span>Organização</span></li>
-            <li><FaLightbulb /><span>Resolução de problemas</span></li>
-            <li><FaComments /><span>Comunicação</span></li>
-          </ul>
-        </div>
+            <h2>Soft Skills</h2>
+            <ul className={styles.techList}>
+              <li>
+                <FaUsers />
+                <span>Trabalho em equipe</span>
+              </li>
+              <li>
+                <FaLayerGroup />
+                <span>Organização</span>
+              </li>
+              <li>
+                <FaLightbulb />
+                <span>Resolução de problemas</span>
+              </li>
+              <li>
+                <FaComments />
+                <span>Comunicação</span>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
     </main>
   );
 }

@@ -1,14 +1,11 @@
 .containerGeral {
   position: relative;
   overflow: hidden;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-height: 100vh;
   padding: 2rem;
-
   background: linear-gradient(135deg, #121214 50%, #2e1065 100%);
   color: #f8fafc;
   font-family: system-ui, -apple-system, sans-serif;
@@ -201,7 +198,7 @@
 
 .title {
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #ffffff;
   line-height: 1.1;
   margin-bottom: 1rem;
