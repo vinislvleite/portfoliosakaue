@@ -49,31 +49,23 @@
   margin: 1rem 0 3rem;
 }
 
-/* Grid de Projetos */
 .projectsGrid {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
 
-/* Card Individual Estilo Glassmorphism */
 .projectCard {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1.2fr 1fr; /* Carrossel na esquerda, texto na direita */
+  grid-template-columns: 1fr 1fr;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
-.projectCard:hover {
-  border-color: rgba(99, 102, 241, 0.4);
-  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.12);
-}
-
-/* Detalhes do Texto */
 .projectDetails {
   padding: 2.5rem;
   display: flex;
@@ -90,15 +82,15 @@
 
 .projectDetails p {
   color: #cbd5e1;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  font-size: 0.92rem;
 }
 
 .projectDetails strong {
-  color: #818cf8; /* Destaque roxo para os rótulos */
+  color: #818cf8;
 }
 
-/* Link de Acesso */
 .projectLink {
   display: inline-flex;
   align-items: center;
@@ -118,36 +110,41 @@
   background: #4f46e5;
 }
 
-/* Estrutura do Carrossel Nativo */
 .carouselContainer {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 350px;
-  background: #09090b;
+  min-height: 400px;
+  background: transparent;
   display: flex;
   align-items: center;
+  padding: 1rem;
   overflow: hidden;
 }
 
 .carouselInner {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carouselImage {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
   display: block;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Botões do Carrossel */
 .carouselBtn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
   width: 40px;
@@ -157,18 +154,31 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
   z-index: 10;
 }
 
 .carouselBtn:hover {
   background: #6366f1;
+  transform: translateY(-50%) scale(1.1);
 }
 
 .prev { left: 1rem; }
 .next { right: 1rem; }
 
-/* Indicadores de bolinha */
+.indicators {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.prev { left: 1rem; }
+.next { right: 1rem; }
+
 .indicators {
   position: absolute;
   bottom: 1rem;
@@ -190,14 +200,13 @@
 
 .activeIndicator {
   background: #6366f1;
-  width: 22px; /* Efeito esticado na bolinha ativa */
+  width: 22px;
   border-radius: 5px;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
   .projectCard {
-    grid-template-columns: 1fr; /* Transforma em bloco único vertical */
+    grid-template-columns: 1fr;
   }
   .carouselContainer {
     height: 300px;
