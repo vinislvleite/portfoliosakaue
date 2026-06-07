@@ -260,6 +260,39 @@
   transform: translateY(-3px);
 }
 
+.contactRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.88rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.2s ease;
+}
+
+.contactItem:hover {
+  color: #ffffff;
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+}
+
+.contactItem svg {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
 
 @media (max-width: 768px) {
   .title {
@@ -288,5 +321,10 @@
   .blob2 {
     width: 250px;
     height: 250px;
+  }
+
+  .contactRow {
+    flex-direction: column;
+    align-items: center;
   }
 }

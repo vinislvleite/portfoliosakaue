@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
+import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa";
 
 const Page = () => {
   return (
@@ -29,10 +30,28 @@ const Page = () => {
           <Link href="/projetos" className={styles.buttonProjetos}>
             Ver meus projetos
           </Link>
-
           <Link href="/introducao" className={styles.buttonHome}>
             Sobre mim
           </Link>
+        </div>
+
+        <div className={styles.contactRow}>
+          <a href="mailto:contato.vinips25@outlook.com" className={styles.contactItem} title="Email">
+            <FaEnvelope />
+            <span>contato.vinips25@outlook.com</span>
+          </a>
+          <a href="https://github.com/vinislvleite" target="_blank" rel="noopener noreferrer" className={styles.contactItem} title="GitHub">
+            <FaGithub />
+            <span>vinislvleite</span>
+          </a>
+          <a href="https://www.linkedin.com/in/vinícius-leite-4792b02ba/" target="_blank" rel="noopener noreferrer" className={styles.contactItem} title="LinkedIn">
+            <FaLinkedin />
+            <span>Vinícius Leite</span>
+          </a>
+          <a href="tel:+5512982518708" className={styles.contactItem} title="Telefone">
+            <FaPhone />
+            <span>12 98251-8708</span>
+          </a>
         </div>
       </div>
     </main>
