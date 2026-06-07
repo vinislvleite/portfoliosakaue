@@ -74,16 +74,13 @@
 .card h2 {
   margin-bottom: 1rem;
 }
-.card p {
-  color: #cbd5e1;
-  line-height: 1.7;
-  flex: 1;
-}
+
 .timeline {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
 }
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -115,6 +112,61 @@
   border-radius: 16px;
   padding: 1.5rem;
 }
+
+.certificationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  align-items: stretch;
+}
+
+.certificationsGrid .card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+}
+
+.certificadoDescricao1 {
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-size: 0.92rem;
+  margin-bottom: 0.75rem;
+}
+
+.certificadoDescricao2 {
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-size: 0.92rem;
+  margin-bottom: 0.75rem;
+}
+
+.certificationsGrid .list {
+  flex: unset;
+  margin-bottom: 0.75rem;
+}
+
+.certificadoButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  background: linear-gradient(135deg, #6c63ff, #5145ff);
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.certificadoButton:hover {
+  transform: translateY(-2px);
+}
+
 .periodo {
   color: #818cf8;
   font-weight: 600;
@@ -196,6 +248,13 @@
   color: #818cf8;
   flex-shrink: 0;
 }
+
+.eventoDescricao {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 992px) {
   .skillsGrid {
     grid-template-columns: repeat(2, 1fr);
