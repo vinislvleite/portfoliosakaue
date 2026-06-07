@@ -28,6 +28,17 @@ const meusProjetos = [
     resultados: "Simplificação no acesso às informações, redução de erros de cadastro e maior eficiência no acompanhamento do fluxo comercial.",
     link: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-2DSM-API",
     imagens: ["/cadastroClientes2.png", "/agendamentoClientes2.png", "/funilProjeto2.png", "/gestaoProjeto2.png", "/graficosProjeto2.png", "/integracaoProjeto2.png", "/vendedoresProjeto2.png"]
+  },
+  {
+    titulo: "Sistema de Apontamento de Horas - GSW",
+    descricao: "Plataforma corporativa desenvolvida para a GSW Soluções Integradas, centralizando o controle de horas, gestão de projetos e dados financeiros de equipes distribuídas por todo o Brasil.",
+    problemaIdentificado: "Dados dispersos entre planilhas, mensagens e anotações geravam inconsistências, retrabalho e falta de visibilidade sobre como o tempo era distribuído entre projetos — impedindo gestores e o financeiro de tomarem decisões confiáveis.",
+    solucao: "Sistema integrado com três perfis distintos: profissionais registram e acompanham seus apontamentos, gestores validam alocações e monitoram tarefas em tempo real, e o financeiro acessa dados consolidados para auditoria e faturamento.",
+    tecnologias: "Next.js, TypeScript, React, Java, Spring, Spring Cloud, MySQL, Docker, JWT",
+    desafios: "Modelagem de um fluxo multi-perfil com rastreabilidade completa, integração de microserviços com Spring Cloud e garantia de consistência dos dados financeiros em um ambiente de alta volumetria de demandas.",
+    resultados: "Solução construída sprint a sprint a partir de necessidades reais levantadas com o cliente, entregando um fluxo completo de registro → validação → decisão financeira com dados confiáveis para toda a operação da GSW.",
+    link: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-3DSM-API",
+    imagens: []
   }
 ];
 

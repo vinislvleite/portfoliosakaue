@@ -27,7 +27,7 @@ const Page = () => {
 
         <div className={styles.buttonGroup}>
           <Link href="/projetos" className={styles.buttonProjetos}>
-            Ver meus projetos →
+            Ver meus projetos
           </Link>
 
           <Link href="/introducao" className={styles.buttonHome}>
