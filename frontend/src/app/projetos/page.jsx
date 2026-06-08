@@ -89,7 +89,7 @@ function ProjectCarousel({ imagens }) {
   );
 }
 
-function Page() {
+function projetoPage() {
   return (
     <main className={styles.containerGeral}>
       <div className={styles.backContainer}>
@@ -133,4 +133,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default projetoPage;

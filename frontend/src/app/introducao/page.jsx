@@ -34,7 +34,7 @@ import {
   SiNeo4J,
 } from "react-icons/si";
 
-function Page() {
+function introducaoPage() {
   return (
     <main className={styles.containerGeral}>
       <div className={styles.backContainer}>
@@ -407,4 +407,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default introducaoPage;
