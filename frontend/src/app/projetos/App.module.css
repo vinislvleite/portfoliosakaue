@@ -158,11 +158,17 @@
   cursor: pointer;
   transition: all 0.2s ease;
   z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
 
 .carouselBtn:hover {
   background: #6366f1;
   transform: translateY(-50%) scale(1.1);
+}
+
+.carouselContainer:hover .carouselBtn {
+  opacity: 1;
 }
 
 .prev { left: 1rem; }
@@ -210,8 +216,14 @@
   .projectCard {
     grid-template-columns: 1fr;
   }
+
   .carouselContainer {
-    height: 300px;
+    height: 320px;
+    min-height: unset;
+  }
+
+  .carouselImage {
+    max-height: 280px;
   }
 }
 
@@ -219,10 +231,45 @@
   .containerGeral {
     padding: 6rem 1.5rem 4rem;
   }
+
   .title {
     font-size: 2.2rem;
   }
+
   .projectDetails {
     padding: 1.5rem;
+  }
+
+  .projectDetails h2 {
+    font-size: 1.4rem;
+  }
+
+  .projectLink {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerGeral {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .carouselContainer {
+    height: 220px;
+    padding: 1rem;
+  }
+
+  .carouselImage {
+    max-height: 200px;
+  }
+
+  .carouselBtn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .title {
+    font-size: 1.8rem;
   }
 }

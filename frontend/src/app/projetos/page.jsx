@@ -38,7 +38,7 @@ const meusProjetos = [
     desafios: "Modelagem de um fluxo multi-perfil com rastreabilidade completa, integração de microserviços com Spring Cloud e garantia de consistência dos dados financeiros em um ambiente de alta volumetria de demandas.",
     resultados: "Solução construída sprint a sprint a partir de necessidades reais levantadas com o cliente, entregando um fluxo completo de registro → validação → decisão financeira com dados confiáveis para toda a operação da GSW.",
     link: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-3DSM-API",
-    imagens: []
+    imagens: ["/usuarios3.jpeg", "/projetos3.jpeg", "/financeiro3.jpeg", "/dashboard3.jpeg"]
   }
 ];
 

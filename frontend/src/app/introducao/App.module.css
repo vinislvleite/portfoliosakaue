@@ -257,30 +257,80 @@
 
 @media (max-width: 992px) {
   .skillsGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
-  .skillsGrid .card:last-child {
-    grid-column: auto;
-    max-width: 100%;
-    margin: 0;
+
+  .skillsGrid .card:nth-child(n) {
+    grid-column: span 1 !important;
   }
-}
-@media (max-width: 768px) {
-  .cards,
-  .infoGrid,
-  .skillsGrid {
+
+  .infoGrid {
     grid-template-columns: 1fr;
   }
-  .skillsGrid .card:last-child {
-    grid-column: auto;
-    max-width: 100%;
-    margin: 0;
+
+  .certificationsGrid {
+    grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 768px) {
+  .containerGeral {
+    padding: 5rem 1.5rem 3rem;
+  }
+
   .title {
     font-size: 2.2rem;
   }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
   .backContainer {
     top: 1rem;
     left: 1rem;
+  }
+
+  .cards,
+  .infoGrid,
+  .skillsGrid,
+  .certificationsGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .skillsGrid .card:nth-child(n) {
+    grid-column: span 1 !important;
+  }
+
+  .timeline::before {
+    left: 12px;
+  }
+
+  .circle {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerGeral {
+    padding: 4.5rem 1rem 2.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .timelineContent {
+    padding: 1rem;
+  }
+
+  .timelineItem {
+    gap: 1rem;
   }
 }
