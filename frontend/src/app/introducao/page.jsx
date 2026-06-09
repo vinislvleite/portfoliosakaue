@@ -346,26 +346,17 @@ function introducaoPage() {
           </div>
 
           <div className={styles.card}>
-            <h2>Soft Skills</h2>
-            <ul className={styles.techList}>
-              <li>
-                <FaUsers />
-                <span>Trabalho em equipe</span>
-              </li>
-              <li>
-                <FaLayerGroup />
-                <span>Organização</span>
-              </li>
-              <li>
-                <FaLightbulb />
-                <span>Resolução de problemas</span>
-              </li>
-              <li>
-                <FaComments />
-                <span>Comunicação</span>
-              </li>
-            </ul>
-          </div>
+          <h2>Soft Skills</h2>
+
+          <ul className={styles.techList}>
+            <li><FaUsers /><span>Trabalho em equipe</span></li>
+            <li><FaLayerGroup /><span>Organização e planejamento</span></li>
+            <li><FaLightbulb /><span>Resolução de problemas</span></li>
+            <li><FaComments /><span>Comunicação</span></li>
+            <li><FaLightbulb /><span>Criatividade e visão sistêmica</span></li>
+            <li><FaUsers /><span>Resiliência e negociação</span></li>
+          </ul>
+        </div>
         </div>
         <h2 className={styles.sectionTitle}>Eventos e Atividades</h2>
 
