@@ -15,6 +15,24 @@ const meusProjetos = [
     tecnologias: "Python, Flask, Pandas, MySQL, Docker, AWS EC2, HTML/CSS/JS",
     desafios: "Normalização de 10 anos de registros brutos, otimização de queries para retornar top 5 produtos rapidamente e deploy na nuvem utilizando Docker.",
     resultados: "Implantação de um dashboard funcional em nuvem que auxilia empresas e órgãos a extrair insights rápidos da evolução histórica comercial.",
+    softSkills: [
+      {
+        nome: "Resolução de problemas",
+        descricao: "Aplicada na análise e tratamento de grandes volumes de dados."
+      },
+      {
+        nome: "Organização",
+        descricao: "Necessária para estruturar e manter a consistência das informações."
+      },
+      {
+        nome: "Trabalho em equipe",
+        descricao: "Desenvolvida na colaboração com os integrantes durante todas as etapas do projeto."
+      },
+      {
+        nome: "Visão sistêmica",
+        descricao: "Importante para compreender a relação entre dados, processos e resultados."
+      }
+    ],
     link: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-1DSM-API",
     imagens: ["/paginaInicial1.png", "/sobreProjeto1.png", "/graficosProjeto1.png", "/insightsProjeto1.png", "/top5Projeto1.png"]
   },
@@ -26,6 +44,24 @@ const meusProjetos = [
     tecnologias: "React, Node.js, MySQL",
     desafios: "Mapeamento das regras de negócio distribuídas e criação de uma interface intuitiva para unificar processos operacionais complexos.",
     resultados: "Simplificação no acesso às informações, redução de erros de cadastro e maior eficiência no acompanhamento do fluxo comercial.",
+    softSkills: [
+      {
+        nome: "Comunicação",
+        descricao: "Utilizada para compreender requisitos e alinhar soluções com a equipe."
+      },
+      {
+        nome: "Organização",
+        descricao: "Fundamental para gerenciar funcionalidades e demandas do sistema."
+      },
+      {
+        nome: "Trabalho em equipe",
+        descricao: "Desenvolvida na construção colaborativa do projeto."
+      },
+      {
+        nome: "Criatividade",
+        descricao: "Aplicada na criação de soluções para otimizar processos da empresa."
+      }
+    ],
     link: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-2DSM-API",
     imagens: ["/cadastroClientes2.png", "/agendamentoClientes2.png", "/funilProjeto2.png", "/gestaoProjeto2.png", "/graficosProjeto2.png", "/integracaoProjeto2.png", "/vendedoresProjeto2.png"]
   },
@@ -37,6 +73,32 @@ const meusProjetos = [
     tecnologias: "Next.js, TypeScript, React, Java, Spring, Spring Cloud, MySQL, Docker, JWT",
     desafios: "Modelagem de um fluxo multi-perfil com rastreabilidade completa, integração de microserviços com Spring Cloud e garantia de consistência dos dados financeiros em um ambiente de alta volumetria de demandas.",
     resultados: "Solução construída sprint a sprint a partir de necessidades reais levantadas com o cliente, entregando um fluxo completo de registro → validação → decisão financeira com dados confiáveis para toda a operação da GSW.",
+    softSkills: [
+      {
+        nome: "Resolução de problemas",
+        descricao: "Aplicada na modelagem de fluxos complexos e integração de sistemas."
+      },
+      {
+        nome: "Comunicação",
+        descricao: "Necessária para alinhar requisitos e validar entregas."
+      },
+      {
+        nome: "Trabalho em equipe",
+        descricao: "Desenvolvida na colaboração entre diferentes áreas do projeto."
+      },
+      {
+        nome: "Organização e planejamento",
+        descricao: "Importantes para gerenciar tarefas e entregas ao longo das sprints."
+      },
+      {
+        nome: "Resiliência",
+        descricao: "Fundamental para superar desafios técnicos durante o desenvolvimento."
+      },
+      {
+        nome: "Negociação",
+        descricao: "Utilizada para alinhar prioridades e necessidades do cliente."
+      }
+    ],
     link: "https://github.com/Kernel-Panic-FatecSjc/KernelPanic-3DSM-API",
     imagens: ["/usuarios3.jpeg", "/projetos3.jpeg", "/financeiro3.jpeg", "/dashboard3.jpeg"]
   }
@@ -113,6 +175,14 @@ function projetoPage() {
                 <p><strong>Solução Desenvolvida:</strong> {projeto.solucao}</p>
                 <p><strong>Tecnologias Utilizadas:</strong> {projeto.tecnologias}</p>
                 <p><strong>Desafios Técnicos:</strong> {projeto.desafios}</p>
+                <p><strong>Soft Skills Desenvolvidas:</strong></p>
+                <ul>
+                  {projeto.softSkills.map((skill, i) => (
+                    <li key={i}>
+                      <strong>{skill.nome}:</strong> {skill.descricao}
+                    </li>
+                  ))}
+                </ul>
                 <p><strong>Resultados Obtidos:</strong> {projeto.resultados}</p>
                 
                 <a 
